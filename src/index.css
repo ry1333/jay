@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bws-dark text-white antialiased;
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2;
+    outline-color: #c92a2a;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 focus-visible:ring-2 focus-visible:ring-offset-2;
+    background-color: #c92a2a;
+    box-shadow: 0 10px 15px -3px rgb(127 29 29 / 0.3);
+  }
+  .btn-primary:hover {
+    background-color: #a61e1e;
+  }
+  .btn-primary:focus-visible {
+    --tw-ring-color: #c92a2a;
+    --tw-ring-offset-color: #0d0d0d;
+  }
+
+  .btn-secondary {
+    @apply bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-xl font-bold transition-all active:scale-95;
+  }
+
+  .card {
+    @apply border border-white/5 rounded-2xl transition-all duration-300;
+    background-color: #1a1a1a;
+  }
+  .card:hover {
+    border-color: rgba(201, 42, 42, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -15px rgba(201, 42, 42, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Interactive card variant with more prominent effects */
+  .card-interactive {
+    @apply border border-white/5 rounded-2xl transition-all duration-300 cursor-pointer;
+    background-color: #1a1a1a;
+  }
+  .card-interactive:hover {
+    border-color: rgba(201, 42, 42, 0.5);
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 25px 50px -15px rgba(201, 42, 42, 0.2), 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium transition-colors;
+  }
+  .nav-link:hover, .nav-link:focus-visible {
+    color: #c92a2a;
+  }
+
+  .nav-link-active {
+    color: #c92a2a;
+  }
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  @apply absolute -top-10 left-4 text-white px-4 py-2 rounded-md font-medium z-[100] focus:top-4 transition-all;
+  background-color: #c92a2a;
+}

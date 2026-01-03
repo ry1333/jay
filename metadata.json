@@ -1,7 +1,0 @@
-{
-  "name": "BWS - Wildfire Mitigation Solutions",
-  "description": "A professional landing page for wildfire risk management and resilience planning, featuring AI-powered risk assessment capabilities.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
-}
