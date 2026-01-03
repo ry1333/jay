@@ -186,7 +186,7 @@ export const team = [
       'Over a 25-year career, Jay also contributed to national disaster response efforts, joining Incident Response Teams for hurricanes and other natural disasters across the country.',
       'Since retiring from public service, Jay has continued to support disaster response in the private sector, including an extended deployment to North Carolina following Hurricane Helene.',
     ],
-    image: `${BASE}images/headshot-dave.jpg`,
+    image: `${BASE}images/headshot-jay-field.jpg`,
     icon: 'Shield',
   },
   {
@@ -197,7 +197,7 @@ export const team = [
       'A Florida Certified Burn Manager, David has served as burn boss on more than 200 prescribed fires and has participated in over 600 burns throughout his career.',
       'He holds NWCG qualifications including TFLD, RXB2, READ, FIRB, HEQB, and ENGB, and earned his degree in Environmental Studies from Florida Gulf Coast University.',
     ],
-    image: `${BASE}images/headshot-jay-field.jpg`,
+    image: `${BASE}images/headshot-dave.jpg`,
     icon: 'Map',
   },
   {
