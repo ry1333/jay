@@ -33,7 +33,7 @@ function TeamMemberCard({ name, role, shortBio, longBio, image, icon }: TeamMemb
   };
 
   // Use real image if it's a local path, otherwise check for placeholder
-  const finalImage = image.startsWith('/images/') ? image : (placeholderImages[name] || image);
+  const finalImage = image.includes('/images/') ? image : (placeholderImages[name] || image);
 
   return (
     <article className="card rounded-3xl overflow-hidden flex flex-col h-full group">
