@@ -173,7 +173,7 @@ export const team = [
     role: 'President/CFO',
     shortBio: 'As a business owner for more than 25 years and a parent to three children, Christy has devoted much of her life to balancing professional and family responsibilities. A graduate of Elon University, Christy is passionate about the outdoors and is committed to preserving and restoring natural habitats through systematic, cost-effective, and efficient processes.',
     longBio: [],
-    image: `${BASE}images/headshot-christy.png`,
+    image: `${BASE}images/headshot-christy.jpg`,
     icon: 'User',
   },
   {
