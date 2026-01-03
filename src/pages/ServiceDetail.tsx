@@ -144,7 +144,7 @@ export default function ServiceDetail() {
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/night-wildfire-bg.jpg"
+            src={`${import.meta.env.BASE_URL}images/night-wildfire-bg.jpg`}
             alt=""
             className="w-full h-full object-cover"
             aria-hidden="true"

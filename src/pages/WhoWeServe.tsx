@@ -106,7 +106,7 @@ export default function WhoWeServe() {
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/night-wildfire-bg.jpg"
+            src={`${import.meta.env.BASE_URL}images/night-wildfire-bg.jpg`}
             alt=""
             className="w-full h-full object-cover"
             aria-hidden="true"

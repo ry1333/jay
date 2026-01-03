@@ -1,6 +1,9 @@
 // Single source of truth for all BWS content
 // All page content should be imported from here
 
+// Base path for GitHub Pages deployment
+const BASE = import.meta.env.BASE_URL || '/';
+
 export const siteConfig = {
   name: 'Bailey Wildfire Solutions',
   shortName: 'BWS',
@@ -8,7 +11,7 @@ export const siteConfig = {
   email: 'info@baileywildfire.com',
   phone: '(XXX) XXX-XXXX',
   location: 'Florida & Colorado',
-  logo: '/images/logo.png',
+  logo: `${BASE}images/logo.png`,
 };
 
 export const mission =
@@ -26,13 +29,13 @@ export const stats = [
 
 // Real images from web.zip
 export const images = {
-  hero: '/images/hero-prescribed-burn.jpg',
-  planning: '/images/planning-map.jpg',
-  fuels: '/images/fuels-management-tree.jpg',
-  nightFire: '/images/night-wildfire-bg.jpg',
-  training: '/images/training-workshop.jpg',
+  hero: `${BASE}images/hero-prescribed-burn.jpg`,
+  planning: `${BASE}images/planning-map.jpg`,
+  fuels: `${BASE}images/fuels-management-tree.jpg`,
+  nightFire: `${BASE}images/night-wildfire-bg.jpg`,
+  training: `${BASE}images/training-workshop.jpg`,
   headshots: {
-    jay: '/images/headshot-jay-field.jpg',
+    jay: `${BASE}images/headshot-jay-field.jpg`,
   },
 };
 
@@ -44,7 +47,7 @@ export const services = [
     shortDescription: 'Comprehensive risk assessment, spatial analysis, and strategic development for communities.',
     icon: 'BarChart3',
     color: 'orange',
-    image: '/images/planning-map.jpg',
+    image: `${BASE}images/planning-map.jpg`,
     fullDescription: 'Our Wildfire Risk Planning service provides communities and landowners with comprehensive assessments that identify vulnerabilities and prioritize mitigation actions.',
     features: ['Community-wide risk assessments', 'Parcel-level vulnerability mapping', 'Fuel load analysis', 'Evacuation route evaluation', 'Mitigation priority ranking'],
     benefits: ['Identify high-risk areas before fires occur', 'Prioritize limited resources effectively', 'Meet insurance and regulatory requirements', 'Qualify for federal and state funding'],
@@ -55,7 +58,7 @@ export const services = [
     shortDescription: 'Community Wildfire Protection Plans tailored to local regulations and funding opportunities.',
     icon: 'FileText',
     color: 'blue',
-    image: '/images/planning-map.jpg',
+    image: `${BASE}images/planning-map.jpg`,
     fullDescription: 'Community Wildfire Protection Plans (CWPPs) are essential documents that help communities qualify for federal funding and coordinate wildfire mitigation efforts.',
     features: ['Stakeholder engagement', 'Risk assessment and mapping', 'Mitigation action prioritization', 'Funding opportunity identification', 'Implementation timeline development'],
     benefits: ['Qualify for Hazardous Fuels Reduction grants', 'Coordinate multi-agency response', 'Establish community-wide priorities', 'Meet FEMA and state requirements'],
@@ -66,7 +69,7 @@ export const services = [
     shortDescription: 'NWCG compliant training for agencies, private crews, and land managers.',
     icon: 'GraduationCap',
     color: 'purple',
-    image: '/images/training-workshop.jpg',
+    image: `${BASE}images/training-workshop.jpg`,
     fullDescription: 'We offer comprehensive wildfire training programs that meet National Wildfire Coordinating Group (NWCG) standards.',
     features: ['S-130/S-190 Basic Firefighter Training', 'S-290 Intermediate Fire Behavior', 'RX-310 Burn Plan Preparation', 'Burn Boss certification prep', 'Annual refresher courses'],
     benefits: ['NWCG-compliant certifications', 'Hands-on field training', 'Experienced instructor cadre', 'Flexible scheduling options'],
@@ -77,7 +80,7 @@ export const services = [
     shortDescription: 'Detailed burn plans (RXB2) including permits, ecological goals, and compliance.',
     icon: 'ClipboardList',
     color: 'green',
-    image: '/images/planning-map.jpg',
+    image: `${BASE}images/planning-map.jpg`,
     fullDescription: 'Prescribed fire is one of the most effective tools for reducing hazardous fuels. Our planning services ensure burns are safe, effective, and compliant.',
     features: ['Site assessment and mapping', 'Burn prescription development', 'Permit application assistance', 'Smoke management planning', 'Contingency and holding plans'],
     benefits: ['Reduce wildfire risk to structures', 'Restore native ecosystem health', 'Meet regulatory requirements', 'Minimize smoke impacts'],
@@ -88,7 +91,7 @@ export const services = [
     shortDescription: 'On-the-ground support for executing safe and effective prescribed burns.',
     icon: 'FlameKindling',
     color: 'red',
-    image: '/images/hero-prescribed-burn.jpg',
+    image: `${BASE}images/hero-prescribed-burn.jpg`,
     fullDescription: 'Our experienced burn crews provide hands-on support for prescribed fire operations. With over 750 burns led and 600+ participated in, our team brings unmatched expertise.',
     features: ['Certified Burn Boss leadership', 'Trained holding and ignition crews', 'Equipment and tool support', 'Weather monitoring', 'Post-burn assessment'],
     benefits: ['Access to experienced burn crews', 'Reduce liability with certified leadership', 'Achieve ecological objectives safely', 'Build internal capacity'],
@@ -99,7 +102,7 @@ export const services = [
     shortDescription: 'Strategic vegetation management to reduce fire spread and intensity.',
     icon: 'Trees',
     color: 'emerald',
-    image: '/images/fuels-management-tree.jpg',
+    image: `${BASE}images/fuels-management-tree.jpg`,
     fullDescription: 'Mechanical fuel reduction and firebreak construction create defensible space and interrupt fire spread.',
     features: ['Defensible space creation', 'Firebreak design and construction', 'Mechanical brush clearing', 'Ladder fuel removal', 'Maintenance scheduling'],
     benefits: ['Immediate risk reduction', 'Protect structures and infrastructure', 'Support safe evacuation routes', 'Complement prescribed fire programs'],
@@ -110,7 +113,7 @@ export const services = [
     shortDescription: 'Educational programs for communities, agencies, and landowners.',
     icon: 'Users',
     color: 'cyan',
-    image: '/images/training-workshop.jpg',
+    image: `${BASE}images/training-workshop.jpg`,
     fullDescription: 'Education is key to building fire-adapted communities. We offer workshops for homeowners, land managers, and community groups.',
     features: ['Firewise USA community programs', 'Homeowner defensible space workshops', 'Land manager seminars', 'Fire department coordination training', 'Custom educational programs'],
     benefits: ['Build community awareness', 'Empower individual action', 'Coordinate neighborhood efforts', 'Qualify for Firewise recognition'],
@@ -170,7 +173,7 @@ export const team = [
     role: 'President/CFO',
     shortBio: 'As a business owner for more than 25 years and a parent to three children, Christy has devoted much of her life to balancing professional and family responsibilities. A graduate of Elon University, Christy is passionate about the outdoors and is committed to preserving and restoring natural habitats through systematic, cost-effective, and efficient processes.',
     longBio: [],
-    image: '/images/headshot-christy.png',
+    image: `${BASE}images/headshot-christy.png`,
     icon: 'User',
   },
   {
@@ -183,7 +186,7 @@ export const team = [
       'Over a 25-year career, Jay also contributed to national disaster response efforts, joining Incident Response Teams for hurricanes and other natural disasters across the country.',
       'Since retiring from public service, Jay has continued to support disaster response in the private sector, including an extended deployment to North Carolina following Hurricane Helene.',
     ],
-    image: '/images/headshot-dave.jpg',
+    image: `${BASE}images/headshot-dave.jpg`,
     icon: 'Shield',
   },
   {
@@ -194,7 +197,7 @@ export const team = [
       'A Florida Certified Burn Manager, David has served as burn boss on more than 200 prescribed fires and has participated in over 600 burns throughout his career.',
       'He holds NWCG qualifications including TFLD, RXB2, READ, FIRB, HEQB, and ENGB, and earned his degree in Environmental Studies from Florida Gulf Coast University.',
     ],
-    image: '/images/headshot-jay-field.jpg',
+    image: `${BASE}images/headshot-jay-field.jpg`,
     icon: 'Map',
   },
   {

@@ -144,7 +144,7 @@ export default function Home() {
             <motion.div className="relative" style={{ opacity: heroOpacity }}>
               <div className="aspect-square relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
                 <motion.img
-                  src="/images/hero-prescribed-burn.jpg"
+                  src={`${import.meta.env.BASE_URL}images/hero-prescribed-burn.jpg`}
                   alt="Prescribed burn - wildfire mitigation in action"
                   className="w-full h-full object-cover brightness-90 hover:brightness-100 transition-all duration-700"
                   loading="eager"
@@ -355,7 +355,7 @@ export default function Home() {
       <section className="relative border-y border-white/5 py-24 px-4 overflow-hidden" aria-labelledby="cta-heading">
         <div className="absolute inset-0">
           <img
-            src="/images/night-wildfire-bg.jpg"
+            src={`${import.meta.env.BASE_URL}images/night-wildfire-bg.jpg`}
             alt=""
             className="w-full h-full object-cover"
             aria-hidden="true"
