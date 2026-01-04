@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/jay/',  // GitHub Pages serves from /jay/ subdirectory
+  base: '/',  // Custom domain serves from root
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
