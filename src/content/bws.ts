@@ -8,7 +8,7 @@ export const siteConfig = {
   name: 'Bailey Wildfire Solutions',
   shortName: 'BWS',
   tagline: 'Wildfire Mitigation Specialists',
-  email: 'info@baileywildfire.com',
+  email: 'info@baileywildfiresolutions.com',
   phone: '(XXX) XXX-XXXX',
   location: 'Florida & Colorado',
   logo: `${BASE}images/logo.png`,
