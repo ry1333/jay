@@ -201,12 +201,31 @@ export const team = [
     icon: 'Map',
   },
   {
-    name: 'Shepard Zedaker, PHD',
+    name: 'Shepard M. Zedaker, PhD',
     role: 'Fire Scientist/Forester/Teacher',
-    shortBio: '',
-    longBio: [],
-    image: 'placeholder-shepard', // needs real photo
+    shortBio: 'Retired Professor of Forestry at Virginia Tech with over 30 years of wildland fire and forest vegetation management research. Published 60+ refereed journal articles and raised over $7 million in extramural funding. Named a Fellow in the Society of American Foresters.',
+    longBio: [
+      'Education: BS Humboldt State, MS Purdue, PhD Oregon State University (all accredited forestry programs). Received Certified Forester certificate in 1994 when the Society of American Foresters CF program began.',
+      'Published 60+ refereed journal articles and book chapters, and more than 250 total publications. Raised over $7 million in extramural funding for Virginia Tech.',
+      'Worked as consultant to the US forest industry, US Forest Service, US EPA, and served on international forestry panels.',
+      'Awards include: Fellow in the Society of American Foresters, best paper in Weed Technology journal, best paper in international journal Forestry, Visiting Research Fellowship to NZ Forest Research Institute, International Weed Science Society Speaker Fellowship, S.F. Pond Visiting Research Fellowship to University of Melbourne, and Hans Merensky Forestry and Agriculture Fellowship to South Africa.',
+      'Continues to work seasonally as a Single Resource Boss in the National Wildfire Coordinating Group wildland fire Incident Qualification System.',
+      'Most important contribution: impacting the learning of over 4,000 students in 100+ courses taught.',
+    ],
+    image: `${BASE}images/sterling.png`,
     icon: 'GraduationCap',
+  },
+  {
+    name: 'Maria Sokol',
+    role: 'Technical Writer & Grant Professional',
+    shortBio: 'Technical writer and grant professional with more than 25 years of experience in public-sector and community-based work, including over 12 years supporting proposals and technical documentation. Has helped clients across the country secure more than $95M in federal, state, local, and private funding.',
+    longBio: [
+      'Supported fire departments, city municipalities, and public agencies nationwide with clear, compliant, and results-focused writing.',
+      'Over 12 years of experience in proposals and technical documentation.',
+      'Based in Sarasota, Florida.',
+    ],
+    image: `${BASE}images/maria.png`,
+    icon: 'User',
   },
 ];
 
