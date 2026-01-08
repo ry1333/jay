@@ -112,15 +112,22 @@ export default function Team() {
         </div>
       </section>
 
-      {/* Team Grid */}
+      {/* Team Grid - Row 1: 3 members */}
       <section
-        className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-wrap justify-center gap-6 mb-32"
+        className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6"
         aria-label="Team members"
       >
-        {team.map((member, i) => (
-          <div key={i} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
-            <TeamMemberCard {...member} />
-          </div>
+        {team.slice(0, 3).map((member, i) => (
+          <TeamMemberCard key={i} {...member} />
+        ))}
+      </section>
+
+      {/* Team Grid - Row 2: 2 members centered */}
+      <section
+        className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-32"
+      >
+        {team.slice(3).map((member, i) => (
+          <TeamMemberCard key={i + 3} {...member} />
         ))}
       </section>
 
