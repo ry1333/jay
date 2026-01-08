@@ -212,7 +212,7 @@ export const team = [
       'Continues to work seasonally as a Single Resource Boss in the National Wildfire Coordinating Group wildland fire Incident Qualification System.',
       'Most important contribution: impacting the learning of over 4,000 students in 100+ courses taught.',
     ],
-    image: `${BASE}images/sterling.png`,
+    image: `${BASE}images/sterling.jpg`,
     icon: 'GraduationCap',
   },
   {
@@ -224,7 +224,7 @@ export const team = [
       'Over 12 years of experience in proposals and technical documentation.',
       'Based in Sarasota, Florida.',
     ],
-    image: `${BASE}images/maria.png`,
+    image: `${BASE}images/maria.jpg`,
     icon: 'User',
   },
 ];
