@@ -118,7 +118,7 @@ export default function Team() {
         aria-label="Team members"
       >
         {team.map((member, i) => (
-          <div key={i} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+          <div key={i} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
             <TeamMemberCard {...member} />
           </div>
         ))}
