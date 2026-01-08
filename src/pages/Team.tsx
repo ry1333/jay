@@ -114,11 +114,13 @@ export default function Team() {
 
       {/* Team Grid */}
       <section
-        className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32"
+        className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-wrap justify-center gap-6 mb-32"
         aria-label="Team members"
       >
         {team.map((member, i) => (
-          <TeamMemberCard key={i} {...member} />
+          <div key={i} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+            <TeamMemberCard {...member} />
+          </div>
         ))}
       </section>
 
